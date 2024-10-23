@@ -45,7 +45,7 @@ joined as (
 
         orders.ordered_at,
 
-        products.product_name,
+        case when products.product_name = 'tangaroo' then 'tangaroooo' else products.product_name end as product_name,
         products.product_price,
         products.is_food_item,
         products.is_drink_item,
