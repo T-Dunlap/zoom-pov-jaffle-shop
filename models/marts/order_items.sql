@@ -51,7 +51,7 @@ joined as (
         products.is_drink_item,
 
         order_supplies_summary.supply_cost, 
-        case when order_items.product_id = 'BEV-004' then 'BEV-XXX' end as product_id_updates
+        case when order_items.product_id = 'BEV-004' then 'BEV-XXX' end as product_id_update
 
     from order_items
 
